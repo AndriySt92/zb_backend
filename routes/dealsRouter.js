@@ -4,6 +4,6 @@ import { authenticateToken } from '../middleware/authenticate.js'
 
 const router = express.Router()
 
-router.get('/', authenticateToken, DealsController.getAll)
+router.get('/', DealsController.getAll)
 
 export default router
